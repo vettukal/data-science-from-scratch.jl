@@ -159,3 +159,5 @@ slope, intercept = theta
 @assert 19.9 < theta[1] < 20.1
 @assert 4.9 < intercept < 5.1
 end
+
+#finished
