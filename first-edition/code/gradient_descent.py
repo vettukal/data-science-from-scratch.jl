@@ -34,7 +34,7 @@ def partial_difference_quotient(f, v, i, h):
          for j, v_j in enumerate(v)]
          
     return (f(w) - f(v)) / h
-
+     
 def estimate_gradient(f, v, h=0.00001):
     return [partial_difference_quotient(f, v, i, h)
             for i, _ in enumerate(v)] 

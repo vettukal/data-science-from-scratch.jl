@@ -2,7 +2,7 @@ import random
 from typing import TypeVar, List, Tuple
 X = TypeVar('X')  # generic type to represent a data point
 
-def split_data(data: List[X], prob: float) -> Tuple[List[X], List[X]]:
+def split_data(data: list[x], prob: float) -> tuple[list[x], list[x]]:
     """Split data into fractions [prob, 1 - prob]"""
     data = data[:]                    # Make a shallow copy
     random.shuffle(data)              # because shuffle modifies the list.
